@@ -19,27 +19,27 @@ This model is then compared to an Azure AutoML run.
 -   Out of all the models, the best performing model was a Soft Voting Ensemble found using AutoML. It uses XGBoost Classifier with a standard scaler wrapper.
 
 ## Scikit-learn Pipeline
-•	Created the workspace, cluster to train and predict the model.
-•	Configured the RandomParameterSampling as a hyperparameter  
-•	Defines an early termination policy based on slack criteria, and a frequency
-•	Setup the sklearn environment for training  
-•	We need to make it ready the training script making the following changes like, Created TabularDataset using TabularDatasetFactory , loaded dataset pass to clen up data and given to train and test data, The distribution of data is 80% data pass to train and the remaining 20% send to testing. LogisticRegression then create the final model based on the parameter
-•	Hyperdrive take a parameter as ScriptRunConfig contain location of training script, target compute and environment details.
-•	Once all the parameters are ready then start configuring the HyperDriveConfig total runs 20 and concurrent runs 4
-•	Submit the hyperdrive config and wait for the result will predict the best model based on the configuration.
-•	When the Hyperdrive result is ready to find the best model by calling get_best_run_by_primary_metric then save the model for further experiment.
+-	Created the workspace, cluster to train and predict the model.
+-	Configured the RandomParameterSampling as a hyperparameter  
+-	Defines an early termination policy based on slack criteria, and a frequency
+-	Setup the sklearn environment for training  
+-	We need to make it ready the training script making the following changes like, Created TabularDataset using TabularDatasetFactory , loaded dataset pass to clen up data and given to train and test data, The distribution of data is 80% data pass to train and the remaining 20% send to testing. LogisticRegression then create the final model based on the parameter
+-	Hyperdrive take a parameter as ScriptRunConfig contain location of training script, target compute and environment details.
+-	Once all the parameters are ready then start configuring the HyperDriveConfig total runs 20 and concurrent runs 4
+-	Submit the hyperdrive config and wait for the result will predict the best model based on the configuration.
+-	When the Hyperdrive result is ready to find the best model by calling get_best_run_by_primary_metric then save the model for further experiment.
 
 
 ## AutoML
-•	Automated machine learning automated the pipeline processing that can time-consuming, iterative tasks of machine learning model development.
-•	During training, Azure Machine Learning creates a number of pipelines in parallel that try different algorithms and predict the correct model. If it finds the correct model stop automatically.
-•	Here I have used: classification
+-	Automated machine learning automated the pipeline processing that can time-consuming, iterative tasks of machine learning model development.
+-	During training, Azure Machine Learning creates a number of pipelines in parallel that try different algorithms and predict the correct model. If it finds the correct model stop automatically.
+-	Here I have used: classification
 
 
 ## Pipeline comparison
-•	When I compared two models AutoML accuracy was 0.91812 better than Hyperdrive accuracy was 0.9088012
-•	Auto ml architecture interact with model automatically and find best model but hyperdrive need to create the pipeline separately.
-•	AutoML is the right architecture to deal with complex model predication.
+-	When I compared two models AutoML accuracy was 0.91812 better than Hyperdrive accuracy was 0.9088012
+-	Auto ml architecture interact with model automatically and find best model but hyperdrive need to create the pipeline separately.
+-	AutoML is the right architecture to deal with complex model predication.
 
 ## Future work
 Looking for low code no code platform and plus customization. Make sure the data preparation, data quality, data validation and accuracy for the prediction. Auto suggest the compute power*
