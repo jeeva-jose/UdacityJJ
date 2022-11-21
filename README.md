@@ -31,7 +31,7 @@ This model is then compared to an Azure AutoML run.
 
 
 ## AutoML
--	Automated machine learning automated the pipeline processing that can time-consuming, iterative tasks of machine learning model development.
+-	Automated machine learning which can automate the pipeline processing and improve the efficiency of computing and save the effort. 
 -	During training, Azure Machine Learning creates a number of pipelines in parallel that try different algorithms and predict the correct model. If it finds the correct model stop automatically.
 -	Here I have used: classification
 
