@@ -13,10 +13,10 @@ This model is then compared to an Azure AutoML run.
 
 
 ## Summary
--   In this problem the dataset contains data about the financial and personal details of the customers of a Portugese bank. We seek to predict if the customer will subscribe to bank term deposit or not.
--   First , a Scikit-learn based LogisticRegression model is defined and used and the hyperparameters of the model are tuned using Azure HyperDrive functionality.
--   Then, the same dataset is provided to Azure AutoML to try and find the best model using its functionality.
--   Out of all the models, the best performing model was a Soft Voting Ensemble found using AutoML. It uses XGBoost Classifier with a standard scaler wrapper.
+-	The provided data set contains marketing data about individuals. The classification goal is to predict whether the customer will subscribe a bank term deposit 
+-	First the data set pass to  Scikit-learn based Logistic Regression hyperdrive then created tuned model 
+-	The second step the same dataset passes to Azure AutoML to get the best model 
+
 
 ## Scikit-learn Pipeline
 -	Created the workspace, cluster to train and predict the model.
