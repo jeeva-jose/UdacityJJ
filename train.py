@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@jeeva-jose 
+jeeva-jose
+/
+UdacityJJ
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+UdacityJJ/train.py /
+@jeeva-jose
+jeeva-jose Add files via upload
+Latest commit 1c1e705 4 days ago
+ History
+ 1 contributor
+75 lines (58 sloc)  2.95 KB
+
 from sklearn.linear_model import LogisticRegression
 import argparse
 import os
@@ -73,3 +103,18 @@ def main():
 
 if __name__ == '__main__':
     main()
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+UdacityJJ/train.py at main · jeeva-jose/UdacityJJ
