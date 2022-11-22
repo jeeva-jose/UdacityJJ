@@ -1,3 +1,4 @@
+
 # Optimizing an ML Pipeline in Azure
 
 ## Overview
@@ -68,12 +69,10 @@ This model is then compared to an Azure AutoML run.
 -	AutoML is the right architecture to deal with complex model predication.
 
 ## Future work
-Looking for low code no code platform and plus customization. Make sure the data preparation, data quality, data validation and accuracy for the prediction. Auto suggest the compute power
+Looking for low code no code platform and plus customization. Make sure the data preparation, data quality, data validation and accuracy for the prediction. Auto suggest the compute power.
 
-      The following criteria can create a better model:
+- The following criteria can create a better model:
      - Given that the data provided is sufficient to make predictions
-     - Run multiple algorithms to predict a better model with less compute
-     - The auto-tune can reduce manual effort.
-     - It is essential for the pipeline to detect early problems such as data issues, parameter changes that save computation and increase model           accuracy 
-
-
+      - Run multiple algorithms to predict a better model with less compute
+      - The auto-tune can reduce manual effort.
+      - It is essential for the pipeline to detect early problems such as data issues, parameter changes that save computation and increase model accuracy.
