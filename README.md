@@ -29,11 +29,35 @@ This model is then compared to an Azure AutoML run.
 -	Submit the hyperdrive config and wait for the result will predict the best model based on the configuration.
 -	When the Hyperdrive result is ready to find the best model by calling get_best_run_by_primary_metric then save the model for further experiment.
 
+### Benefits of parameter sampler
+
+-	I have used RandomParameterSampling, that make a random sampling on hyperparameter search space.
+-	In this case, I have defined choice function to generate a discrete set of values and uniform function to generate a distribution of continuous values. So, there is a more chance of increasing the accuracy of the model.
+-	C and max_iter are the hyperparameters provided in the problem statement so that the hyperdrive can try all the options for the values of these hyperparameters can increase possible accuracy.
+
+### Benefits of early stopping policy
+
+-	Early Stopping policy help to terminate to run the hyperdrive run if the model is not improving the better accuracy by given amount of time and iteration. 
+-	The main befits are reduce the time and saves a lot of computational resources
+-	slack_factor: The amount of slack allowed with respect to the best performing training run. This factor specifies the slack as a ratio.
+-	evaluation_interval: Optional. The frequency for applying the policy. Each time the training script logs the primary metric counts as one interval.
+-	delay_evaluation: Optional. The number of intervals to delay policy evaluation. Use this parameter to avoid premature termination of training runs. If specified, the policy applies every multiple of evaluation_interval that is greater than or equal to delay_evaluation.
+
+
 
 ## AutoML
 -	Automated machine learning which can automate the pipeline processing and improve the efficiency of computing and save the effort. 
 -	During training, Azure Machine Learning creates a number of pipelines in parallel that try different algorithms and predict the correct model. If it finds the correct model stop automatically.
 -	Here I have used: classification
+  
+     - compute_target: A compute target is a designated compute resource or environment where you run your training script or host your service            deployment.
+     - task : what task needs to be performed , regression or classification
+     - training_data : the data on which we need to train the autoML.
+     - label_column_name : the column name in the training data which is the output label.
+     - iterations : the number of iterations we want to run AutoML.
+     - primary_metric : the evaluation metric for the models
+     - n_cross_validations : n-fold cross validations needed to perform in each model
+     - experiment_timeout_minutes : the time in minutes after which autoML will stop.
 
 
 ## Pipeline comparison
