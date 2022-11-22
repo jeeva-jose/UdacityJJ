@@ -49,6 +49,8 @@ This model is then compared to an Azure AutoML run.
 -	Automated machine learning which can automate the pipeline processing and improve the efficiency of computing and save the effort. 
 -	During training, Azure Machine Learning creates a number of pipelines in parallel that try different algorithms and predict the correct model. If it finds the correct model stop automatically.
 -	Here I have used: classification
+
+      ### The following parameters required to run AutoML
   
      - compute_target: A compute target is a designated compute resource or environment where you run your training script or host your service            deployment.
      - task : what task needs to be performed , regression or classification
