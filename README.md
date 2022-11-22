@@ -50,7 +50,7 @@ This model is then compared to an Azure AutoML run.
 -	During training, Azure Machine Learning creates a number of pipelines in parallel that try different algorithms and predict the correct model. If it finds the correct model stop automatically.
 -	Here I have used: classification
 
-      ### The following parameters required to run AutoML
+      ### The following parameters are required to run AutoML
   
      - compute_target: A compute target is a designated compute resource or environment where you run your training script or host your service            deployment.
      - task : what task needs to be performed , regression or classification
